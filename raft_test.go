@@ -12,13 +12,13 @@ func Test(t *testing.T) {
 
 	ch := make(chan bool)
 	//ch1:=make(chan bool)
-	New(1, "/home/vamsi/Desktop/go/src/github.com/vamsikrishnacs/cluster1/d.json", ch)
-	New(2, "/home/vamsi/Desktop/go/src/github.com/vamsikrishnacs/cluster1/d.json", ch)
-	s3 := New(3, "/home/vamsi/Desktop/go/src/github.com/vamsikrishnacs/cluster1/d.json", ch)
-	New(4, "/home/vamsi/Desktop/go/src/github.com/vamsikrishnacs/cluster1/d.json", ch)
-	New(5, "/home/vamsi/Desktop/go/src/github.com/vamsikrishnacs/cluster1/d.json", ch)
-	New(6, "/home/vamsi/Desktop/go/src/github.com/vamsikrishnacs/cluster1/d.json", ch)
-	New(7, "/home/vamsi/Desktop/go/src/github.com/vamsikrishnacs/cluster1/d.json", ch)
+	New(1, "./config.json", ch)
+	New(2, "./config.json", ch)
+	s3 := New(3, "./config.json", ch)
+	New(4, "./config.json", ch)
+	New(5, "./config.json", ch)
+	New(6, "./config.json", ch)
+	New(7, "./config.json", ch)
 	//s3.Outbox()<-&Envelope{2,0,"hii"}
 	//s4.Outbox()<-&Envelope{2,0,"hiiii"}
 
